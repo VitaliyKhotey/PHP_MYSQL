@@ -40,7 +40,7 @@
                     <label for="login">Логин</label>
                     <input type="text" name="login"><br />
                     <label for="pwd">Пароль</label>
-                    <input type="text" name="pwd"><br />
+                    <input type="password" name="pwd"><br />
                     <input type="submit" value="Вход">
                     <input type="reset" value="Очитсить">
                 </fieldset>

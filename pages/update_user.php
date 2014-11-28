@@ -21,20 +21,20 @@ while ($post = $row->fetch_assoc()){
     <fieldset>
         <legend>Изменить</legend>
         <label for='name'>Имя</label>
-        <input type='text' name='name' placeholder='{$post['name']}'><br />
+        <input type='text' name='name' placeholder='{$post['name']}' value='{$post['name']}'><br />
         <label for='login'>Логин</label>
-        <input type='text' name='login' placeholder='{$post['login']}'><br />
+        <input type='text' name='login' placeholder='{$post['login']}' value='{$post['login']}'><br />
         <label for='password'>Пароль</label>
-        <input type='text' name='password' placeholder='{$post['password']}'><br />
+        <input type='text' name='password' placeholder='{$post['password']}' value='{$post['password']}'><br />
         <label for='mail'>Почта</label>
-        <input type='text' name='mail' placeholder='{$post['mail']}'><br />
+        <input type='text' name='mail' placeholder='{$post['mail']}' value='{$post['mail']}'><br />
         <h2>Права</h2>
         <label for='view'>Просмотр</label>
-        <input type='text' name='view' placeholder='{$post['view']}'><br />
-        <label for='view'>Изминение</label>
-        <input type='text' name='update' placeholder='{$post['update']}'><br />
+        <input type='text' name='view' placeholder='{$post['view']}' value='{$post['view']}'><br />
+        <label for='update'>Изминение</label>
+        <input type='text' name='update' placeholder='{$post['update']}' value='{$post['update']}'><br />
         <label for='view'>Удаление</label>
-        <input type='text' name='delete' placeholder='{$post['delete']}'><br />
+        <input type='text' name='delete' placeholder='{$post['delete']}' value='{$post['delete']}'><br />
 
 
         <input type='text' name='id' placeholder='{$post['id']}' value='{$post['id']}' style='display: none'><br />

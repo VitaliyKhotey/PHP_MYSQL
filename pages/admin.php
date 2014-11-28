@@ -83,7 +83,7 @@
                     <h3>Информация</h3>
                     <?php
                         echo "
-                         <table>
+                         <table id='users'>
                         <tr >
                             <td class='head'>ФИО</td>
                             <td class='head'>Категория</td>

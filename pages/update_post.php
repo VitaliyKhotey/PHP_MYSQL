@@ -21,13 +21,13 @@ while ($post = $row->fetch_assoc()){
     <fieldset>
         <legend>Изменить</legend>
         <label for='fio'>Фио</label>
-        <input type='text' name='fio' placeholder='{$post['fio']}'><br />
+        <input type='text' name='fio' placeholder='{$post['fio']}' value='{$post['fio']}'><br />
         <label for='category'>Категория</label>
-        <input type='text' name='category' placeholder='{$post['category']}'><br />
+        <input type='text' name='category' placeholder='{$post['category']}' value='{$post['category']}'><br />
         <label for='info'>Инфо</label>
-        <input type='text' name='info' placeholder='{$post['info']}'><br />
+        <input type='text' name='info' placeholder='{$post['info']}' value='{$post['info']}'><br />
         <label for='dateb'>Дата рождения</label>
-        <input type='text' name='dateb' placeholder='{$post['dateb']}'><br />
+        <input type='text' name='dateb' placeholder='{$post['dateb']}' value='{$post['dateb']}'><br />
         <input type='text' name='id' placeholder='{$post['id']}' value='{$post['id']}' style='display: none'><br />
         <input type='submit' value='Изменить' id='update'>
         <input type='reset' value='Очитсить'>

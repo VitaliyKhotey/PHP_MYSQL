@@ -28,7 +28,7 @@
                     <label for="login">Логин</label>
                     <input type="text" name="login"><br />
                     <label for="pwd">Пароль</label>
-                    <input type="text" name="pwd"><br />
+                    <input type="password" name="pwd"><br />
                     <label for="mail">Почта</label>
                     <input type="text" name="mail"><br />
                     <input type="submit" id="reg" value="Зарегистрироваться">

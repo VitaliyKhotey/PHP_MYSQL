@@ -6,7 +6,9 @@ $fio = $_POST['fio'];
 $category = $_POST['category'];
 $info = $_POST['info'];
 $dateb = $_POST['dateb'];
-$datetob = rand(0,365);
+$datetob = rand(0,364);
+$dateT = explode(':',date("d:H:Y"));
+
 
 $query = "INSERT INTO date (fio,category,info,dateb,daytob) VALUES ('$fio','$category','$info','$dateb','$datetob')";
 

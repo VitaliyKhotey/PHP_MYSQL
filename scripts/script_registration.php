@@ -7,7 +7,7 @@ $pwd = strtolower($_POST['pwd']);
 $mail = strtolower($_POST['mail']);
 
 $delete = 0;
-$update =0;
+$update = 0;
 $view = 0;
 
 $query = "INSERT INTO users (name,login,password,mail,`delete`,`update`,`view`,`priv`) VALUES ('$name','$login','$pwd','$mail','$delete','$update','$view','user')";

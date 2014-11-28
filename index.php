@@ -32,7 +32,7 @@
                             }
                         ?>
                         <?php
-                            if($_SESSION['priv'] == 'admin') {
+                            if(@$_SESSION['priv'] == 'admin') {
                                 echo "<li><a href='pages/admin.php'>Админ панель</a></li>";
                             }
                         ?>
@@ -46,6 +46,7 @@
                 <div id="content">
                     <p>
                     <?php
+                    echo $dateT2;
                         if(isset($_SESSION['login']))
                         {
                             echo "<b>Вы вошли как: </b> {$_SESSION['login']}";
@@ -54,7 +55,7 @@
                         
                     </p>
                     <?php
-                    if(!($_SESSION['view']==0)) {
+                    if(!(@$_SESSION['view']==0)) {
                         echo "
                          <table>
                         <tr >
@@ -80,8 +81,6 @@
                    } else {
                         echo "<h2>Не достаточно прав для просмотра</h2>";
                     }
-
-
                     ?>
                 </div>
             </main>

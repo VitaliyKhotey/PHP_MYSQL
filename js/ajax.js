@@ -1,32 +1,3 @@
-/*$(function() {
-
-	var name = $("input[name=name]").val();
-	var login = $("input[name=login]").val();
-	var pwd = $("input[name=pwd]").val();
-	var mail = $("input[name=mail]").val();
-
-	$('#reg').on('click',function(){
-		$.ajax({
-		url: '../scripts/script_registration.php',
-		type: 'POST',
-		data: {name: name, login: login, pwd: pwd, mail: mail},
-	})
-	.done(function() {
-		console.log("success");
-	})
-	.fail(function() {
-		console.log("error");
-	})
-	.always(function() {
-		console.log("complete");
-	});
-	});
-	
-	
-});*/
-
-
-
 $(document).ready(function() {
 	// регистрация пользователя
 	$('#reg').on('click',function(e){
@@ -40,6 +11,10 @@ $(document).ready(function() {
 			$('form').hide();
 			var $div = $('<div>');
 			$('#content').append($div.text('Регистрация прошла успешно !'));
+			$table = $('<table>');
+			$tr = $('<tr>');
+			$td = $('<td>');
+			$('#users').append($tr).append($td.text('поле 1')).append($td.text('поле 2'));
 		}
 		});
 	});
